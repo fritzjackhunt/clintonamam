@@ -6,10 +6,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinton Amam</title>
 
+    <!-- Font Awesome Free's Solid and Brand files -->
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
     <!-- Template Main CSS File -->
   <link href="{% static 'css/styles.css' %}" rel="stylesheet">
 </head>
 <body>
-    <p>Hello World</p>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="{% static 'pictures/logo.jpeg' %}" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Data/Business Analyst</p>
+          <h1>Hi, I'm <span>Clinton</span></h1>
+          <h1>Amam from Nigeria</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="{% static 'pictures/clinton1.png' %}" alt="">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I'm a result-driven data analyst with a strong quantitative background and expertise in extracting actionable insights from complex datasets. Proficient in data visualization, statistical analysis, and data driven decision-making. Proven ability to translate business requirements into analytical solutions, contributing to informed strategic planning.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Communication Skills</span><br>Team Work</li>
+                <li><span>Tableau</span><br>Data visualization, cloud databases and spreadsheets</li>
+                <li><span>SQL</span><br>Terminal Operating Systems(TOS)</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Opertions Terminal Clerk</span><br>Ports and Terminal Operator Nigeria Limited, Rivers, Nigeria</li>
+                <li><span>Project Researcher (Remote, Contract)</span><br>Cutix PLC, Anambra, Nigeria</li>
+                <li><span>Vessel Planner/Statistician And Data Analyst</span><br>Ports And Terminal Operator Nigeria Limited, Rivers, Nigeria</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Bachelors Of Technology, Project Management Technology</span><br>Federal University Of Technology Owerri, Nigeria</li>
+                <li><span>West African Senior Secondary School Certificate</span><br>Federal Science And Technical College, Nigeria</li>
+                <li><span>First School Leaving Certificate</span><br>El-Shaddai Nursery And Primary School, Nigeria</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Tableau Software</h2>
+            <p>Expert in using Tableau software for data visualization focused on business intelligence and to query relational databases  , online analytical processing cubes, cloud databases and spreadsheets. Also familiar in extracting, storing, and retrieving data from an in-memory data engine</p>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-microsoft"></i>
+            <h2>Microsoft Products</h2>
+            <p>Expert in using a range of Microsoft products to interactively visualize any data and integrate the visuals for self-service and business intelligence. These products include Excel, Power Bi, Power Point, Outlook, Word</p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-terminal"></i>
+            <h2>Terminal Operating Software (TOS)</h2>
+            <p>Expert in using Terminal Operating softwares as a key part of a supply chain to control the movement and storage of various types of cargp in and around a marine terminal. Also familiar with using the software to enable better use of assets, labour and equipment, plan workload, and receive up-to-date information</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Certifications/Badges</h1>
+
+        <div class="work-list">
+          <div class="work">
+            <img src="{% static 'pictures/cert.jpg' %}" alt="">
+            <div class="layer">
+              <h3>Cloud Computing Fundamentals</h3>
+              <p>Issued on 27 Nov 2023 | Issued by IBM SkillsBuild</p>
+              <a href="https://www.credly.com/badges/4e282915-e97a-458a-a3b9-28f824da648a/public_url" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="{% static 'pictures/cert1.jpg' %}" alt="">
+            <div class="layer">
+              <h3>Data Analytics</h3>
+              <p>Issued by IBM SkillsBuild</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="{% static 'pictures/cert2.jpg' %}" alt="">
+            <div class="layer">
+              <h3>Ananlyze Open Data Sets With Python</h3>
+              <p>Issued on 08 Nov 2023 | Issued by IBM SkillsBuild</p>
+              <a href="https://www.credly.com/badges/2d505da1-81c7-448c-bb6a-c8491192fecc/public_url" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+      
+
+        <div class="work">
+          <img src="{% static 'pictures/cert3.jpg' %}" alt="">
+          <div class="layer">
+            <h3>Big Data Foundations</h3>
+            <p>Issued on 15 Jan 2023 | Issued by IBM SkillsBuild</p>
+            <a href="https://www.credly.com/badges/6ec8aab3-0391-4445-a090-f00726b25c46/public_url" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="{% static 'pictures/cert4.jpg' %}" alt="">
+          <div class="layer">
+            <h3>Cybersecurity Fundamentals</h3>
+            <p>Issued on 13 Feb 2023 | Issued by IBM SkillsBuild</p>
+            <a href="https://www.credly.com/badges/bd419065-8fb2-47b8-b6ed-be85327a72da/public_url" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="{% static 'pictures/cert5.jpg' %}" alt="">
+          <div class="layer">
+            <h3>Agile Explorer</h3>
+            <p>Issued on 01 May 2023 | Issued by IBM SkillsBuild</p>
+            <a href="https://www.credly.com/badges/ace40e38-9e1f-448c-b045-2179c52962a5/public_url" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>smickeyangello@gmail.com</p>
+            <p><i class="fa-solid fa-mobile"></i>+234 915 633 9462</p>
+
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/clinton-amam-02ba48198" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+              <a href="https://linktr.ee/voicesasthoughts?fbclid=PAAaZwBObn1lGahxN9xiTX_nQ4JGy6K5PpDMrCjfhc-q1Vld9dKDBW850h3os" target="_blank"><i class="fa-solid fa-link"></i></a>
+
+            </div>
+
+            <a href="{% static 'pdf/resume.pdf' %}" download="" class="btn btn1">Download CV</a>
+            
+          </div>
+
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+              <button type="submit" class="btn btn1">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &#169; Clinton Amam</p>
+      </div>
+    </div>
+
+
+
+
+
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
 </body>
 </html>

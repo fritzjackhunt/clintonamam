@@ -9,3 +9,4 @@ sqlparse==0.4.3
 tzdata==2022.7
 urllib3==2.0.3
 whitenoise==6.3.0
+fontawesomefree==6.5.1
